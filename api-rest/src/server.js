@@ -1,6 +1,6 @@
 import app from './app.js'; // Importa o aplicativo Express
 
-import conexao from '../infra/conexao.js';
+import conexao from './app/database/conexao.js'; // Importa a conexão com o banco de dados
 
 const PORT = 3000; 
 
