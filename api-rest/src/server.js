@@ -1,6 +1,6 @@
-import app from './src/app.js'; // Importa o aplicativo Express
+import app from './app.js'; // Importa o aplicativo Express
 
-import conexao from './infra/conexao.js';
+import conexao from '../infra/conexao.js';
 
 const PORT = 3000; 
 
