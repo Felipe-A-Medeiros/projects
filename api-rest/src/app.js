@@ -1,6 +1,6 @@
 import express from 'express' 
 const app = express() 
-import SelecaoController from './app/controllers/selecaocontroller.js'
+import SelecaoController from './app/controllers/Selecaocontroller.js'
 
 //indicar que o express vai receber dados no formato JSON
 app.use(express.json()) 
