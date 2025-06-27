@@ -1,15 +1,15 @@
 import express from 'express' 
+import router from './routes.js'
 const app = express() 
-import SelecaoController from './app/controllers/Selecaocontroller.js'
+
 
 //indicar que o express vai receber dados no formato JSON
 app.use(express.json()) 
 
+//usar router   
+app.use(router)
+
 //ROTAS CRUD
-app.get('/selecoes', SelecaoController.index) 
-app.get('/selecoes/id/:id', SelecaoController.show)
-app.post('/selecoes', SelecaoController.store) 
-app.put('/selecoes/:id', SelecaoController.update) 
-app.delete('/selecoes/:id', SelecaoController.delete) 
+
 
 export default app
