@@ -2,7 +2,7 @@ import app from './app.js'; // Importa o aplicativo Express
 
 import conexao from './app/database/conexao.js'; // Importa a conexão com o banco de dados
 
-const PORT = process.env.PORT || 3000; 
+const PORT = process.env.PORT || 3000
 
 // fazera conexão com o banco de dados
 conexao.connect((erro) => {
